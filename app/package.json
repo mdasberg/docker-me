@@ -1,0 +1,16 @@
+{
+  "name": "docker-example-app",
+  "version": "1.0.0",
+  "description": "docker example todo app",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "angular": "1.6.4",
+    "angular-resource": "1.6.4",
+    "express": "4.15.2",
+    "express-http-proxy": "1.0.2",
+    "http-proxy": "^1.16.2",
+    "todomvc-app-css": "2.1.0"
+  }
+}

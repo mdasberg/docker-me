@@ -1,0 +1,15 @@
+{
+  "expression": "/api/todos",
+  "name": "Add todo",
+  "method": "POST",
+  "responses": {
+    "success": {
+      "default": true,
+      "status": 200
+    },
+    "oops": {
+      "status": 409,
+      "data": "duplicate"
+    }
+  }
+}

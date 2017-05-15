@@ -1,0 +1,81 @@
+
+{
+  "expression": "/api/todos",
+  "name": "Get all todos",
+  "method": "GET",
+  "responses": {
+    "initial": {
+      "default": true,
+      "data": [
+        {
+          "description": "do something",
+          "completed": false
+        },
+        {
+          "description": "do something else",
+          "completed": true
+        },
+        {
+          "description": "do something different",
+          "completed": false
+        }
+      ]
+    },
+    "afterAdd": {
+      "data": [
+        {
+          "description": "do something",
+          "completed": false
+        },
+        {
+          "description": "do something else",
+          "completed": true
+        },
+        {
+          "description": "do something different",
+          "completed": false
+        },
+        {
+          "description": "another todo",
+          "completed": false
+        }
+      ]
+    },
+    "afterArchive": {
+      "data": [
+        {
+          "description": "do something",
+          "completed": false
+        },
+        {
+          "description": "do something different",
+          "completed": false
+        },
+        {
+          "description": "another todo",
+          "completed": false
+        }
+      ]
+    },
+    "afterCompleted": {
+      "data": [
+        {
+          "description": "do something",
+          "completed": false
+        },
+        {
+          "description": "do something different",
+          "completed": false
+        },
+        {
+          "description": "another todo",
+          "completed": true
+        }
+      ]
+    },
+    "oops": {
+      "status": 409,
+      "data": []
+    }
+  }
+}
