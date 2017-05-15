@@ -1,0 +1,32 @@
+{
+  "name": "docker-example",
+  "description": "Node plugin that provides the ability to use scenario based api mocking of angular apps",
+  "version": "1.2.4",
+  "homepage": "https://github.com/mdasberg/docker-me",
+  "author": {
+    "name": "Mischa Dasberg",
+    "email": "mischa@dasberg.nl"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdasberg/docker-me.git"
+  },
+  "dependencies": {
+    "angular": "1.6.4",
+    "angular-resource": "1.6.4",
+    "todomvc-app-css": "2.1.0"
+  },
+  "devDependencies": {
+    "express": "4.15.2",
+    "express-http-proxy": "1.0.2",
+    "http-proxy": "^1.16.2"
+  },
+  "scripts": {
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/mdasberg/docker-me/blob/master/LICENSE"
+    }
+  ]
+}
