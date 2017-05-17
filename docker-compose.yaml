@@ -1,5 +1,28 @@
 version: '2'
 
 services:
+  ngapimock:
+    image: mdasberg/ng-apimock
+    mem_limit: 30m
+    ports:
+      - "3000:3000"
+    volumes:
+      - $PWD/mocks:/mocks
+    networks:
+      - docker-workshop
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - ngapimock
+    ports:
+      - "3001:3001"
+    networks:
+      - docker-workshop
 
 networks:
+  docker-workshop:
+    driver: bridge
+
